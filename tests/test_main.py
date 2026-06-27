@@ -1,10 +1,10 @@
-"""Smoke tests for PKGNAME."""
+"""Smoke tests for bll."""
 
 from __future__ import annotations  # Forward refs without quotes
 
 import pytest
 
-from PKGNAME import __version__
+from bll import __version__
 
 
 def test_version_defined() -> None:

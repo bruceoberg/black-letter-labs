@@ -4,7 +4,9 @@
   languages.python =
   {
     enable = true;
-    version = "3.13";
+    # to use, run this first:
+    #  devenv inputs add nixpkgs-python github:cachix/nixpkgs-python --follows nixpkgs
+    #version = "3.13";
     venv.enable = true;
 
     uv =
