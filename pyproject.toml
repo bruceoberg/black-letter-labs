@@ -7,6 +7,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "openpyxl>=3.1.5",
 ]
 
 # Entry point: `uv run bll` or just `bll` inside the devenv shell.
