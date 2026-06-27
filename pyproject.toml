@@ -1,7 +1,7 @@
 [project]
-name = "bll"
+name = "black-letter-labs"
 version = "0.1.0"
-description = "TODO: one-line description"
+description = "code for solving black letter labs puzzles"
 authors = [
     { name = "Bruce Oberg", email = "bruce@oberg.org" }
 ]

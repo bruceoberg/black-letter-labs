@@ -3,7 +3,7 @@ revision = 3
 requires-python = ">=3.13"
 
 [[package]]
-name = "bll"
+name = "black-letter-labs"
 version = "0.1.0"
 source = { editable = "." }
 

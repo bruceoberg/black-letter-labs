@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Entry point for `python -m PKGNAME`."""
+"""Entry point for `python -m ocr`."""
 
-from PKGNAME.main import main
+from .main import main
 
 main()

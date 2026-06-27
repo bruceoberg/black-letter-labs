@@ -11,8 +11,8 @@ from . import __version__
 
 def main() -> None:
 	parser = argparse.ArgumentParser(
-		prog="PKGNAME",
-		description="TODO: one-line description",
+		prog="ocr",
+		description="get text from images",
 	)
 	parser.add_argument(
 		"--version",
@@ -24,7 +24,7 @@ def main() -> None:
 	args = parser.parse_args()
 
 	# TODO: implement
-	print("hello from PKGNAME")
+	print("hello from ocr")
 
 
 if __name__ == "__main__":

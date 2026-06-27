@@ -6,7 +6,8 @@ from pathlib import Path
 
 # Package metadata — read from pyproject.toml at install time so there is
 # exactly one place to update the version / author.
-__project__ = __name__
+__project__ = 'black-letter-labs'
+__app__ = __name__
 __version__ = version(__project__)
 __author_email__ = metadata(__project__)["Author-email"]
 
