@@ -14,6 +14,7 @@ dependencies = [
 # the package name; update both if you rename the project.
 [project.scripts]
 bll = "bll.main:main"
+ocr = "ocr.main:main"
 
 [build-system]
 requires = ["hatchling"]
