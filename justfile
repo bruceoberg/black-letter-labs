@@ -10,9 +10,9 @@ run *args:
 test *args:
     uv run pytest {{args}}
 
-# Type-check with pyright
+# Type-check with mypy
 check:
-    uv run pyright src/
+    uv run mypy
 
 # Add a runtime dependency (e.g. `just add requests`)
 add *pkgs:

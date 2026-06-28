@@ -29,5 +29,13 @@ packages = ["src/bll"]
 [dependency-groups]
 dev = [
     "pytest>=8.0",
-    "pyright>=1.1",
+    "mypy>=1.11",
+    "types-PyYAML>=6.0",
 ]
+
+[tool.mypy]
+python_version = "3.13"
+files = ["src"]
+strict = true
+# ocrmac / openpyxl ship no type stubs; don't let their missing types fail the check.
+ignore_missing_imports = true
