@@ -31,7 +31,7 @@ def LAnnotationOcrImage(
 
 	strFramework = "livetext" if fLiveText else "vision"
 
-	return ocrmac.OCR(str(pathImage), framework=strFramework).recognize()
+	return ocrmac.OCR(str(pathImage), framework=strFramework, unit="line").recognize()
 
 
 def WriteOcrResultsXlsx(pathDir: Path, pathOutput: Path, fLiveText: bool = True) -> None:
