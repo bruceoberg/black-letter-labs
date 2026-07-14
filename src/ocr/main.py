@@ -1,79 +1,137 @@
 #!/usr/bin/env python3
-"""Scan a directory of card images and write OCR results to an Excel spreadsheet."""
+"""Scan a directory tree of card images and write OCR results to a readable YAML file."""
 
 from __future__ import annotations  # Forward refs without quotes
 
 import argparse
 import sys
-from pathlib import Path
 
-import openpyxl
-from openpyxl.styles import Alignment, Font
+from collections.abc import Iterator
+from enum import IntEnum, auto
+from pathlib import Path
+from typing import Any
+
+import yaml
 from ocrmac import ocrmac
 
 from . import __version__
 
 
-# Column headers for the output sheet
+# Image file extensions we attempt to OCR (matched case-insensitively).
 
-G_STR_COL_FILE = "File"
-G_STR_COL_TEXT = "Text"
-G_STR_COL_CONFIDENCE = "Confidence"
-G_STR_COL_BBOX = "Bounding Box"
+g_setStrImageExt = {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".gif", ".webp", ".heic"}
 
 
-def LAnnotationOcrImage(
-	pathImage: Path,
-	fLiveText: bool = True,
-) -> list[tuple[str, float, list[float]]]:
-	# Returns list of (text, confidence, bbox) for all recognized text in the image.
-	# bbox is normalized [x, y, w, h] with origin at bottom-left (Vision convention).
 
-	strFramework = "livetext" if fLiveText else "vision"
+class ORIENT(IntEnum):   # tag = orient
+	# Coarse shape of a text chunk's bounding box, in pixel space.
 
-	return ocrmac.OCR(str(pathImage), framework=strFramework, unit="line").recognize()
+	Square    = auto()   # width and height within g_rAspectSquareMax of each other
+	Portrait  = auto()   # taller than wide by more than g_rAspectSquareMax
+	Landscape = auto()   # wider than tall by more than g_rAspectSquareMax
+
+type TAnnotation = tuple[str, float, tuple[float, float, float, float]] # tag = anno
+
+class CChunk:   # tag = chunk
+	# A chunk is "landscape" if its OCR rectangle is more than this many times wider than
+	# tall (and vice versa for "portrait"); anything in between is "square".
+
+	g_rAspectSquareMax = 3.0
+
+	# One recognized line of text plus the shape of its bounding box.
+	def __init__(self, anno: TAnnotation) -> None:
+		strcText, gConf, (x, y, dX, dY) = anno
+
+		self.strText = str(strcText) # ocrmac.OCR.recognize does not return python strings.
+		self.gConf = gConf
+		self.x = x
+		self.y = y
+		self.dX = dX
+		self.dY = dY
+
+		self.orient = ORIENT.Square
+
+		if self.dY and self.dX > self.g_rAspectSquareMax * self.dY:
+			self.orient = ORIENT.Landscape
+		elif self.dX and self.dY > self.g_rAspectSquareMax * self.dX:
+			self.orient = ORIENT.Portrait
 
 
-def WriteOcrResultsXlsx(pathDir: Path, pathOutput: Path, fLiveText: bool = True) -> None:
-	# Scans all PNG images in pathDir, runs OCR on each, and writes results to pathOutput.
-	# Each annotation gets its own row: filename, recognized text, confidence, bbox.
+class CPool:   # tag = pool
+	# Holds the OCR chunks for a single image in reading order. 
 
-	wb = openpyxl.Workbook()
-	ws = wb.active
-	ws.title = "OCR Results"
+	def __init__(self, 	pathImage: Path, fLiveText: bool = True) -> None:
 
-	# Header row
+		self.pathImage = pathImage
 
-	lStrHeaders = [G_STR_COL_FILE, G_STR_COL_TEXT, G_STR_COL_CONFIDENCE, G_STR_COL_BBOX]
-	ws.append(lStrHeaders)
+		strFramework = "livetext" if fLiveText else "vision"
 
-	fontBold = Font(name="Arial", bold=True)
-	for cell in ws[1]:
-		cell.font = fontBold
+		self.lChunk = [
+			CChunk(anno)
+			for anno in ocrmac.OCR(str(pathImage), framework=strFramework, unit="line").recognize()
+		]
 
-	# Data rows — one row per annotation per image
+	def IterKVMeta(self) -> Iterator[tuple[str, Any]]:
+		# Metadata only — reads the pool without consuming. Reports the total chunk count and
+		# a per-orientation tally of everything still present.
 
-	for pathImage in sorted(pathDir.glob("*.png")):
-		lAnnotation = LAnnotationOcrImage(pathImage, fLiveText=fLiveText)
+		mpStrCount: dict[str, int] = {}
+		for chunk in self.lChunk:
+			strKey = chunk.orient.name.lower()
+			mpStrCount[strKey] = mpStrCount.get(strKey, 0) + 1
 
-		for strText, gConf, lBbox in lAnnotation:
-			strBbox = ", ".join(f"{g:.4f}" for g in lBbox)
-			ws.append([pathImage.name, strText, round(gConf, 4), strBbox])
+		yield ("chunk_count", len(self.lChunk))
+		yield ("orientation_counts", mpStrCount)
 
-	# Column widths and alignment
+	def IterKVChunks(self) -> Iterator[tuple[str, Any]]:
+		# Catch-all consumer — drains whatever chunks remain into a flat list, each carrying
+		# its text and orientation. Keep this last in g_lFnStage so smarter stages inserted
+		# ahead of it get first pick.
 
-	ws.column_dimensions["A"].width = 30
-	ws.column_dimensions["B"].width = 50
-	ws.column_dimensions["C"].width = 12
-	ws.column_dimensions["D"].width = 36
+		lObjChunks = [
+			{
+				"text": str(chunk.strText),
+				"orientation": chunk.orient.name.lower(),
+			}
+			for chunk in self.lChunk
+		]
 
-	alignWrap = Alignment(wrap_text=True, vertical="top")
-	for row in ws.iter_rows(min_row=2):
-		for cell in row:
-			cell.font = Font(name="Arial")
-			cell.alignment = alignWrap
+		yield ("chunks", lObjChunks)
 
-	wb.save(pathOutput)
+	def IterKV(self) -> Iterator[tuple[str, Any]]:
+		yield from self.IterKVMeta()
+		yield from self.IterKVChunks()
+
+
+def ObjFromImage(pathImage: Path, fLiveText: bool = True) -> dict[str, object]:
+	# Build the output dict for one image by running every stage over its pool.
+
+	return dict(CPool(pathImage, fLiveText=fLiveText).IterKV())
+
+
+def LPathImages(pathDir: Path) -> list[Path]:
+	# All image files under pathDir, recursively, sorted for stable output.
+
+	return sorted(
+		path for path in pathDir.rglob("*")
+		if path.is_file() and path.suffix.lower() in g_setStrImageExt
+	)
+
+
+def WriteOcrResultsYaml(pathDir: Path, lPathImages: list[Path], pathOutput: Path, fLiveText: bool = True) -> None:
+	# Recursively OCRs every image under pathDir and writes a YAML map keyed by
+	# deck-relative path. Each value is the per-image stage output from ObjFromImage.
+
+	objOut: dict[str, object] = {}
+
+	for pathImage in lPathImages:
+		strKey = pathImage.relative_to(pathDir).as_posix()
+		objOut[strKey] = ObjFromImage(pathImage, fLiveText=fLiveText)
+
+	pathOutput.parent.mkdir(parents=True, exist_ok=True)
+	pathOutput.write_text(
+		yaml.safe_dump(objOut, sort_keys=False, allow_unicode=True, default_flow_style=False)
+	)
 
 
 def main() -> None:
@@ -87,16 +145,16 @@ def main() -> None:
 		version=f"%(prog)s {__version__}",
 	)
 	parser.add_argument(
-		"--images-dir",
+		"--decks-dir",
 		type=Path,
-		default=Path("images"),
-		help="Directory containing PNG card images (default: 'images')",
+		default=Path("decks"),
+		help="Directory tree of card images, searched recursively (default: 'decks')",
 	)
 	parser.add_argument(
 		"--output",
 		type=Path,
-		default=Path("ocr_results.xlsx"),
-		help="Output Excel file path (default: 'ocr_results.xlsx')",
+		default=Path("playground/ocr.yaml"),
+		help="Output YAML file path (default: 'playground/ocr.yaml')",
 	)
 	parser.add_argument(
 		"--no-livetext",
@@ -106,22 +164,22 @@ def main() -> None:
 
 	args = parser.parse_args()
 
-	pathDir: Path = args.images_dir
+	pathDir: Path = args.decks_dir
 	pathOutput: Path = args.output
 	fLiveText: bool = not args.no_livetext
 
 	if not pathDir.is_dir():
-		print(f"error: images directory not found: {pathDir}", file=sys.stderr)
+		print(f"error: decks directory not found: {pathDir}", file=sys.stderr)
 		sys.exit(1)
 
-	lPathImages = sorted(pathDir.glob("*.png"))
+	lPathImages = LPathImages(pathDir)
 
 	if not lPathImages:
-		print(f"error: no PNG images found in {pathDir}", file=sys.stderr)
+		print(f"error: no image files found under {pathDir} (searched recursively)", file=sys.stderr)
 		sys.exit(1)
 
-	print(f"scanning {len(lPathImages)} images in '{pathDir}'...")
-	WriteOcrResultsXlsx(pathDir, pathOutput, fLiveText=fLiveText)
+	print(f"scanning {len(lPathImages)} images under '{pathDir}'...")
+	WriteOcrResultsYaml(pathDir, lPathImages, pathOutput, fLiveText=fLiveText)
 	print(f"results written to '{pathOutput}'")
 
 
