@@ -9,6 +9,7 @@ import sys
 from collections.abc import Iterator
 from enum import IntEnum, auto
 from pathlib import Path
+from tqdm import tqdm
 from typing import Any
 
 import yaml
@@ -29,6 +30,11 @@ class ORIENT(IntEnum):   # tag = orient
 	Square    = auto()   # width and height within g_rAspectSquareMax of each other
 	Portrait  = auto()   # taller than wide by more than g_rAspectSquareMax
 	Landscape = auto()   # wider than tall by more than g_rAspectSquareMax
+
+class CARD(IntEnum): # tag = card
+	Back = auto()
+	Start = auto()
+	Game = auto()
 
 type TAnnotation = tuple[str, float, tuple[float, float, float, float]] # tag = anno
 
@@ -60,9 +66,11 @@ class CChunk:   # tag = chunk
 class CPool:   # tag = pool
 	# Holds the OCR chunks for a single image in reading order. 
 
-	def __init__(self, 	pathImage: Path, fLiveText: bool = True) -> None:
+	def __init__(self, pathRoot: Path, pathImage: Path, fLiveText: bool = True) -> None:
 
+		self.pathRoot = pathRoot
 		self.pathImage = pathImage
+		self.pathRelative = self.pathImage.relative_to(self.pathRoot)
 
 		strFramework = "livetext" if fLiveText else "vision"
 
@@ -71,42 +79,34 @@ class CPool:   # tag = pool
 			for anno in ocrmac.OCR(str(pathImage), framework=strFramework, unit="line").recognize()
 		]
 
-	def IterKVMeta(self) -> Iterator[tuple[str, Any]]:
-		# Metadata only — reads the pool without consuming. Reports the total chunk count and
-		# a per-orientation tally of everything still present.
-
-		mpStrCount: dict[str, int] = {}
-		for chunk in self.lChunk:
-			strKey = chunk.orient.name.lower()
-			mpStrCount[strKey] = mpStrCount.get(strKey, 0) + 1
-
-		yield ("chunk_count", len(self.lChunk))
-		yield ("orientation_counts", mpStrCount)
-
-	def IterKVChunks(self) -> Iterator[tuple[str, Any]]:
+	def LObjChunks(self) -> list[dict[str, Any]]:
 		# Catch-all consumer — drains whatever chunks remain into a flat list, each carrying
 		# its text and orientation. Keep this last in g_lFnStage so smarter stages inserted
 		# ahead of it get first pick.
 
-		lObjChunks = [
+		return [
 			{
 				"text": str(chunk.strText),
-				"orientation": chunk.orient.name.lower(),
+				"orientation": chunk.orient.name,
+				"confidence": chunk.gConf,
+				"x": chunk.x,
+				"y": chunk.y,
+				"dX": chunk.dX,
+				"dY": chunk.dY,
 			}
 			for chunk in self.lChunk
 		]
 
-		yield ("chunks", lObjChunks)
 
-	def IterKV(self) -> Iterator[tuple[str, Any]]:
-		yield from self.IterKVMeta()
-		yield from self.IterKVChunks()
-
-
-def ObjFromImage(pathImage: Path, fLiveText: bool = True) -> dict[str, object]:
+def KVFromImage(pathRoot: Path, pathImage: Path, fLiveText: bool = True) -> tuple[str, object]:
 	# Build the output dict for one image by running every stage over its pool.
 
-	return dict(CPool(pathImage, fLiveText=fLiveText).IterKV())
+	pool = CPool(pathRoot, pathImage, fLiveText=fLiveText)
+	
+	strKey = pool.pathRelative.stem
+	lObjVal = pool.LObjChunks()
+
+	return (strKey, lObjVal)
 
 
 def LPathImages(pathDir: Path) -> list[Path]:
@@ -118,15 +118,22 @@ def LPathImages(pathDir: Path) -> list[Path]:
 	)
 
 
-def WriteOcrResultsYaml(pathDir: Path, lPathImages: list[Path], pathOutput: Path, fLiveText: bool = True) -> None:
+def WriteOcrResultsYaml(pathRoot: Path, lPathImages: list[Path], pathOutput: Path, fLiveText: bool = True) -> None:
 	# Recursively OCRs every image under pathDir and writes a YAML map keyed by
 	# deck-relative path. Each value is the per-image stage output from ObjFromImage.
 
 	objOut: dict[str, object] = {}
 
-	for pathImage in lPathImages:
-		strKey = pathImage.relative_to(pathDir).as_posix()
-		objOut[strKey] = ObjFromImage(pathImage, fLiveText=fLiveText)
+	strBarFormat = "{desc} {n_fmt}/{total_fmt}: {percentage:3.0f}%|{bar}|{postfix[0]}"
+
+	with tqdm(total=len(lPathImages), desc="Reading Images", bar_format=strBarFormat, postfix=[" " * 20]) as pbar:
+		for pathImage in lPathImages:
+			pbar.postfix[0] = f"{pathImage.stem:<20}"
+			pbar.update(0)
+			strKey, objVal = KVFromImage(pathRoot, pathImage, fLiveText=fLiveText)
+			objOut[strKey] = objVal
+			pbar.update(1)
+
 
 	pathOutput.parent.mkdir(parents=True, exist_ok=True)
 	pathOutput.write_text(
@@ -164,22 +171,22 @@ def main() -> None:
 
 	args = parser.parse_args()
 
-	pathDir: Path = args.decks_dir
+	pathRoot: Path = args.decks_dir
 	pathOutput: Path = args.output
 	fLiveText: bool = not args.no_livetext
 
-	if not pathDir.is_dir():
-		print(f"error: decks directory not found: {pathDir}", file=sys.stderr)
+	if not pathRoot.is_dir():
+		print(f"error: decks directory not found: {pathRoot}", file=sys.stderr)
 		sys.exit(1)
 
-	lPathImages = LPathImages(pathDir)
+	lPathImages = LPathImages(pathRoot)
 
 	if not lPathImages:
-		print(f"error: no image files found under {pathDir} (searched recursively)", file=sys.stderr)
+		print(f"error: no image files found under {pathRoot} (searched recursively)", file=sys.stderr)
 		sys.exit(1)
 
-	print(f"scanning {len(lPathImages)} images under '{pathDir}'...")
-	WriteOcrResultsYaml(pathDir, lPathImages, pathOutput, fLiveText=fLiveText)
+	print(f"scanning {len(lPathImages)} images under '{pathRoot}'...")
+	WriteOcrResultsYaml(pathRoot, lPathImages, pathOutput, fLiveText=fLiveText)
 	print(f"results written to '{pathOutput}'")
 
 
