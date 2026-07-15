@@ -4,6 +4,8 @@
 from __future__ import annotations  # Forward refs without quotes
 
 import argparse
+import re
+import sys
 
 from enum import StrEnum, IntEnum, auto
 from pathlib import Path
@@ -36,13 +38,48 @@ class SChunk(BaseModel): # tag - chunk
 	dX:				float		= Field(default=0.0)
 	dY:				float		= Field(default=0.0)
 
-type SCard = list[SChunk]
+type SCard = list[SChunk] # tag = card
 type SCards = dict[str, SCard] # tag = cards
 
-class CARD(IntEnum): # tag = card
+class ENTRYK(IntEnum): # tag = entryk
 	Back = auto()
 	Start = auto()
 	Game = auto()
+
+class CEntry:
+	s_reCardNo = re.compile(r'(Card )(\d+)')
+
+	def __init__(self, strName: str, card: SCard):
+		self.strName = strName
+		self.card = card
+		self.strDeck, strSeqScan = self.strName.split('.')
+		self.seqScan = int(strSeqScan)
+		self.strCardNo = ''
+		if self.seqScan == 0:
+			self.entryk = ENTRYK.Back
+		elif self.seqScan == 1:
+			self.entryk = ENTRYK.Start
+		else:
+			self.entryk = ENTRYK.Game
+
+			iChunkCardNo = -1
+			for iChunk, chunk in enumerate(card):
+				match = self.s_reCardNo.search(chunk.strText)
+				if not match:
+					continue
+				if self.strCardNo:
+					sys.exit(f"error: card has two numbers:\n  {self.strCardNo}\n  {chunk.strText}")
+				self.strCardNo = chunk.strText
+				iChunkCardNo = iChunk
+			if not self.strCardNo:
+				sys.exit(f"error: card {self.strName} has no numbers")
+
+			# print(f"{self.strName}: {self.strCardNo}")
+
+class CDatabase:
+	def __init__(self, cards: SCards):
+		self.lEntry = [CEntry(strName, card) for strName, card in cards.items()]
+
 
 def main() -> None:
 	parser = argparse.ArgumentParser(
@@ -76,8 +113,11 @@ def main() -> None:
 	strYaml = pathInput.read_text(encoding="utf-8")
 	objCards = yaml.safe_load(strYaml)
 	cards = TypeAdapter(SCards).validate_python(objCards)
-
 	print(f"Read {len(cards)} cards")
+
+	db = CDatabase(cards)
+
+	print(f"Processed {len(db.lEntry)} entries")
 
 if __name__ == "__main__":
 	main()
