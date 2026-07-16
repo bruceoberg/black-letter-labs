@@ -41,6 +41,11 @@ class SChunk(BaseModel): # tag - chunk
 type SCard = list[SChunk] # tag = card
 type SCards = dict[str, SCard] # tag = cards
 
+class DECK(StrEnum):
+	RubberDucky = 'rd'
+	BloodBath = 'bb'
+	JAcuzzi = 'ja'
+
 class ENTRYK(IntEnum): # tag = entryk
 	Back = auto()
 	Start = auto()
@@ -52,33 +57,69 @@ class CEntry:
 	def __init__(self, strName: str, card: SCard):
 		self.strName = strName
 		self.card = card
-		self.strDeck, strSeqScan = self.strName.split('.')
+		strDeck, strSeqScan = self.strName.split('.')
+		self.deck = DECK(strDeck)
 		self.seqScan = int(strSeqScan)
-		self.strCardNo = ''
+		
 		if self.seqScan == 0:
 			self.entryk = ENTRYK.Back
+			self.strCopyright = ''
+			self.seqCard = 999
 		elif self.seqScan == 1:
 			self.entryk = ENTRYK.Start
+			self.strCopyright = ''
+			self.seqCard = 0
 		else:
 			self.entryk = ENTRYK.Game
 
+			strCardNo = ''
 			iChunkCardNo = -1
 			for iChunk, chunk in enumerate(card):
 				match = self.s_reCardNo.search(chunk.strText)
 				if not match:
 					continue
-				if self.strCardNo:
-					sys.exit(f"error: card has two numbers:\n  {self.strCardNo}\n  {chunk.strText}")
-				self.strCardNo = chunk.strText
+				if strCardNo:
+					sys.exit(f"error: card has two numbers:\n  {strCardNo}\n  {chunk.strText}")
+				self.strCopyright = chunk.strText
+				strCardNo = match.group(2)
 				iChunkCardNo = iChunk
-			if not self.strCardNo:
+			if not strCardNo:
 				sys.exit(f"error: card {self.strName} has no numbers")
+		
+			self.seqCard = int(strCardNo)
 
 			# print(f"{self.strName}: {self.strCardNo}")
+
+	def StrNameOld(self) -> str:
+		return f"{self.strName}.png"
+		
+	def StrNameNew(self) -> str:
+		return f"{self.deck.value}-{self.seqCard:03d}.png"
 
 class CDatabase:
 	def __init__(self, cards: SCards):
 		self.lEntry = [CEntry(strName, card) for strName, card in cards.items()]
+
+	def WriteRenameScripts(self):
+		mpDeckSetEntry: dict[DECK, set[CEntry]] = {}
+
+		for entry in self.lEntry:
+			mpDeckSetEntry.setdefault(entry.deck, set()).add(entry)
+
+		for deck, setEntry in mpDeckSetEntry.items():
+			lStrRename: list[str] = []
+
+			for entry in setEntry:
+				lStrRename.append(f"git mv images/{entry.StrNameOld()} {entry.StrNameNew()}")
+			
+			pathOutput = Path('decks') / (deck.value + '.sh')
+
+			print(f"Writing to {pathOutput}")
+			
+			pathOutput.parent.mkdir(parents=True, exist_ok=True)
+			pathOutput.write_text('\n'.join(lStrRename))
+
+
 
 
 def main() -> None:
@@ -118,6 +159,8 @@ def main() -> None:
 	db = CDatabase(cards)
 
 	print(f"Processed {len(db.lEntry)} entries")
+
+	db.WriteRenameScripts()
 
 if __name__ == "__main__":
 	main()
