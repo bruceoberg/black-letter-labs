@@ -45,6 +45,7 @@ class DECK(StrEnum):
 	RubberDucky = 'rd'
 	BloodBath = 'bb'
 	JAcuzzi = 'ja'
+	Tuba = 'tu'
 
 class ENTRYK(IntEnum): # tag = entryk
 	Back = auto()
@@ -52,25 +53,50 @@ class ENTRYK(IntEnum): # tag = entryk
 	Game = auto()
 
 class CEntry:
-	s_reCardNo = re.compile(r'(Card )(\d+)')
+	s_reCardNo = re.compile(r'(Car[da] )(\d+)')
 
 	def __init__(self, strName: str, card: SCard):
 		self.strName = strName
 		self.card = card
-		strDeck, strSeqScan = self.strName.split('.')
-		self.deck = DECK(strDeck)
-		self.seqScan = int(strSeqScan)
-		
-		if self.seqScan == 0:
-			self.entryk = ENTRYK.Back
+
+		if '-' in self.strName:
+			assert('.' not in self.strName)
+
+			strDeck, strSeqScan = self.strName.split('-')
+			assert(len(strSeqScan) == 3)
+			self.deck = DECK(strDeck)
+			assert(self.deck != DECK.Tuba)
+			self.seqScan = int(strSeqScan)
+			
+			if self.seqScan == 999:
+				self.entryk = ENTRYK.Back
+			elif self.seqScan == 0:
+				self.entryk = ENTRYK.Start
+			else:
+				self.entryk = ENTRYK.Game
+		else:
+			assert('.' in self.strName)
+
+			strDeck, strSeqScan = self.strName.split('.')
+			self.deck = DECK(strDeck)
+			assert(self.deck == DECK.Tuba)
+			self.seqScan = int(strSeqScan)
+			
+			if self.seqScan == 131:
+				self.entryk = ENTRYK.Back
+			elif self.seqScan == 66:
+				self.entryk = ENTRYK.Start
+			else:
+				self.entryk = ENTRYK.Game
+
+		if self.entryk == ENTRYK.Back:
 			self.strCopyright = ''
 			self.seqCard = 999
-		elif self.seqScan == 1:
-			self.entryk = ENTRYK.Start
+		elif self.entryk == ENTRYK.Start:
 			self.strCopyright = ''
 			self.seqCard = 0
 		else:
-			self.entryk = ENTRYK.Game
+			assert(self.entryk == ENTRYK.Game)
 
 			strCardNo = ''
 			iChunkCardNo = -1
@@ -83,6 +109,8 @@ class CEntry:
 				self.strCopyright = chunk.strText
 				strCardNo = match.group(2)
 				iChunkCardNo = iChunk
+			if not strCardNo and self.strName == 'tu.130':
+				strCardNo = '247' # obscured by tonya roberts bright thigh
 			if not strCardNo:
 				sys.exit(f"error: card {self.strName} has no numbers")
 		
@@ -91,7 +119,8 @@ class CEntry:
 			# print(f"{self.strName}: {self.strCardNo}")
 
 	def StrNameOld(self) -> str:
-		return f"{self.strName}.png"
+		strFile = f"{self.strName}.png"
+		return strFile if self.deck == DECK.Tuba else f"images/{strFile}"
 		
 	def StrNameNew(self) -> str:
 		return f"{self.deck.value}-{self.seqCard:03d}.png"
@@ -110,7 +139,7 @@ class CDatabase:
 			lStrRename: list[str] = []
 
 			for entry in setEntry:
-				lStrRename.append(f"git mv images/{entry.StrNameOld()} {entry.StrNameNew()}")
+				lStrRename.append(f"git mv {entry.StrNameOld()} {entry.StrNameNew()}")
 			
 			pathOutput = Path('decks') / (deck.value + '.sh')
 
