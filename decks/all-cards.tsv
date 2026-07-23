@@ -1,0 +1,508 @@
+card_edition	card_type	card_id	card_value	card_color	card_name	card_number	card_text	card_quotation
+Jacuzzi	bath_toy	174	8	#AAE0FC	Leon Daedet	© 2025 Seventeen Games | Card 174 | E3	"Daedet scrawled with bitter grace,
+A loyal scribe to a losing case."	“A lion may die of an ass's kick.” — Robert
+Jacuzzi	bath_toy	122	6	#AAE0FC	Marié Washington	© 1984 Loneliest # | Card 122 | F1	"A pseudonym inked by her careful hand,
+Marié Picquart made her political stand."	“A writer is a world trapped in a person.” — Victor
+Jacuzzi	bath_toy	31	1	#E1897A	Émile Combes	© 2025 Seventeen Games | Card 31 | L3	"Combes moved laws with quiet grace,
+To mend the wounds of a broken case."	“Action expresses priorities.” — Mahatma
+Jacuzzi	bath_toy	103	5	#CDE6D0	Francis Pressensé	"© 1984 Ernst & Young, abbr. | Card 103"	"Pressensé wrote with righteous fire,
+A voice the mob could not retire."	"“After all, hope is a form of planning.” — Gloria"
+Jacuzzi	bath_toy	7	-1	#CDE6D0	"Le Bon
+Premier Ministre"	© 2025 Seventeen Games | Card 7	"Léon Blum in a defiant defense,
+Rallied his statesmen against false pretense."	“All money is a matter of belief.” — Adam
+Jacuzzi	bath_toy	91	5	#E1897A	Jean-Baptistè	"© 1984 B&O, e.g. | Card 91 | K1"	"He hailed, they say, from Monstro Island,
+A whispering thread in a scandal so violent?"	“All movements go too far.” — Bertrand
+Jacuzzi	bath_toy	63	3	#AEA1FF	Louis Lêblois	© 2025 Seventeen Games | Card 63 | C1	"Understanding confidant to Marié,
+Lêblois saw through all the lies of the day?"	“America is a willingness of the heart.” — F. Scott
+Jacuzzi	action	225	0	#FFFFFF	Drip Drip Drain	© 2025 Seventeen Games | Card 225	"Discard all the cards in the bathtub. The water level is now 0.
+Discard after playing."	"“An important step in knowing WHERE you are, is finding someone other than David or Paul.” — Seventeen Games"
+Jacuzzi	action	228	0	#FFFFFF	Upsetting Uh Oh!	© 2025 Seventeen Games | Card 228	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	“Another WHAT requires seeing something you excel at. And another requires looking at something lighter than air.” — Seventeen Games
+Jacuzzi	bath_toy	170	8	#AAE0FC	Édouard Drumont	© 2025 Seventeen Games | Card 170 | F3	"Drumont's pen spewed hate and spite,
+A twisted view of wrong as right."	“Censorship is advertising paid by the government.” — Federico
+Jacuzzi	bath_toy	120	6	#1FB25A	W-Rousseau	© 1984 Bottom or Sponge | Card 120 | G1	"Waldeck’s laws began to heal,
+The broken trust the courts would steal."	“Cries for help are frequently inaudible.” — Tom
+Jacuzzi	bath_toy	154	8	#AEA1FF	Paul Déroulède	© 2025 Seventeen Games | Card 154 | A1	"Déroulède fanned the fervent flame,
+A nationalist proud to fake the blame."	“Death is an absolute marvel.” — William
+Jacuzzi	action	229	0	#FFFFFF	"Love
+Your Neighbor"	© 2025 Seventeen Games | Card 229	"Change seats with a player of your choice. You move into their position, and they move into yours. You get each others’ cards, overflow, turn position, seat, view, et cetera.
+Discard after playing."	“Don’t start at the start / It is really the ending / That’s so important.” — Seventeen Games
+Jacuzzi	bath_toy	15	0	#CDE6D0	Joseph Reinach	© 2025 Seventeen Games | Card 15	"Reinach stood firm with facts in hand,
+Unmasking lies that plagued the land."	“Every dogma has its day.” — Anthony
+Jacuzzi	bath_toy	23	0	#CDE6D0	"Arman de
+Caillavet"	© 2025 Seventeen Games | Card 23	"Caillavet penned with fierce belief,
+Plays to shield against all the grief."	“Every word is a prejudice.” — Friedrich
+Jacuzzi	bath_toy	55	3	#AAE0FC	L'Aurore	© 2025 Seventeen Games | Card 55 | E1	"L’Aurore shone with Zola’s flame,
+And lit a path to clear Dreyfus’ name."	“Everybody is a teenage idol.” — Barry
+Jacuzzi	action	210	0	#FFFFFF	Jean-Bien’s Surprise	© 2025 Seventeen Games | Card 210	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"“Excuse me, I must go and putt.” — P.G."
+Jacuzzi	bath_toy	43	2	#F7941D	Lucie Dreyfus	© 2025 Seventeen Games | Card 43	"Lucie’s hope would not be swayed,
+Her love endured where lies were laid."	“Fear is intense self-awareness.” — Don
+Jacuzzi	bath_toy	142	8	#AEA1FF	Camille Krantz	© 2025 Seventeen Games | Card 142 | B2	"Krantz obeyed where orders led,
+But turned aside from where truth bled."	"“For thy sake, tobacco, I would do anything but die.” — Charles"
+Jacuzzi	bath_toy	51	2	#1FB25A	Henrì Brisson	© 2025 Seventeen Games | Card 51	"As sixth elected supporter, calm and wise,
+Brisson cut through the nation’s lies?"	“Habit is a great deadener.” — Samuel
+Jacuzzi	bath_toy	99	5	#FFEDC7	Frédéric Passy	© 1984 USS in Mirror Universe | Card 99 | B3	"Passy preached with peaceful breath,
+And fought for truth in war and death."	“Hate is a lack of imagination.” — Graham
+Jacuzzi	bath_toy	21	0	#AEA1FF	Anatòle France	© 2025 Seventeen Games | Card 21 | C2	"France saw the ethnic inquest as shame;
+Did he turn his pen on the source of the blame?"	“Hope is a very unruly emotion.” — Gloria
+Jacuzzi	bath_toy	107	5	#AEA1FF	Paul Valéry	© 1984 First Natural # | Card 107 | C3	"Valéry penned with artful tone;
+He would not let Dreyfus stand alone."	“I believe in the incomprehensibility of God.” — Honoré de
+Jacuzzi	action	214	0	#FFFFFF	Éclat de Surprise	© 2025 Seventeen Games | Card 214	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	“I feel alone and safe in public.” — Gene
+Jacuzzi	bath_toy	78	4	#FFEDC7	Louis Dega	© 1984 Dario Luigi Angelo’s End | Card 78 | F2	"On Devil’s rock, he found a friend,
+A bond that prison could not end."	“I will learn by screwing up.” — Greg
+Jacuzzi	bath_toy	158	8	#FFEDC7	Maurice Barrès	© 2025 Seventeen Games | Card 158 | B1	"Barrès wrote with cold disdain,
+To bind the lie and spread the pain."	“If you rest you rust.” — Helen
+Jacuzzi	bath_toy	146	8	#E1897A	Lucidité Lépine	© 2025 Seventeen Games | Card 146 | L2	"As Prefect of Police, Lépine held sway,
+And moved events the legal way."	“Imagination rules the world.” — Napoleon
+Jacuzzi	bath_toy	11	-1	#DA3996	Émile Zola	© 2025 Seventeen Games | Card 11	"Zola cried “J’accuse!” in a thunderous tone,
+His pen struck harder than any stone."	“Kebenaran tidak perlu di iklankan.” — Fidel
+Jacuzzi	bath_toy	111	6	#AAE0FC	Arthúr Ranc	© 1984 The Saint’s Inits | Card 111 | D3	"Squat, recondite, and rock-hard,
+Ranc struck with prose, a Dreyfusard?"	"“Knowing others is wisdom, knowing yourself is enlightenment.” — Lao"
+Jacuzzi	bath_toy	27	1	#FFEDC7	Jean-Bete Jaurès	© 2025 Seventeen Games | Card 27 | I3	"Jaurès gave voice to liberty,
+Printing truth in L’Humanité."	“Language is fossil Poetry.” — Ralph Waldo
+Jacuzzi	bath_toy	59	3	#CDE6D0	Fernand Labori	© 2025 Seventeen Games | Card 59	"Labori stood, though bullets flew,
+His cause was just, his heart was true."	“Law is always better than war.” — Brian
+Jacuzzi	bath_toy	202	9	#DA3996	Félix Faure	© 2025 Seventeen Games | Card 202	"President Faure ignored the storm,
+And clung to comfort, not reform."	“Life is wasted on the living.” — Douglas
+Jacuzzi	bath_toy	178	9	#FFEDC7	Codename: Lima	© 2025 Seventeen Games | Card 178 | H3	"Lima masked the hand unseen,
+A ghost within the war machine."	“Nobody picks on a strong man.” — Charles
+Jacuzzi	bath_toy	150	8	#DA3996	M Schwartzkoppen	© 2025 Seventeen Games | Card 150	"Schwartzkoppen sent the secrets on,
+While Dreyfus bore the burden long."	"“Nothing is ours, except time.” — Lucius Annaeus"
+Jacuzzi	bath_toy	123	7	#E1897A	Adolphe Messimy	© 1984 Commonly Follows Main | Card 123 | J3	"Messimy gave the truth a shield,
+In chambers where dark lies revealed."	“Nothing thicker than a knife's blade separates happiness from melancholy.” — Virginia
+Jacuzzi	bath_toy	198	9	#AAE0FC	Hubert-Josèph Henry	© 2025 Seventeen Games | Card 198 | D1	"Henry forged the fatal lie,
+And seemed to abide uxoricide?"	“Obedience is the fruit of faith.” — Christina
+Jacuzzi	bath_toy	134	7	#1FB25A	Jean-Bière Recho	© 1984 Comic Louis | Card 134 | I1	"Jean-Bière swayed the public tone,
+The Third Republic soon unthroned."	“One cowboy is never enough.” — Vanessa
+Jacuzzi	bath_toy	186	9	#E1897A	Júles Meline	© 2025 Seventeen Games | Card 186 | J2	"An appendix penned with practiced hand,
+Meline gave lies a legal stand?"	"“One planet, one experiment.” — Edward O."
+Jacuzzi	bath_toy	39	2	#FFEDC7	Scheurer-Késtner	© 2025 Seventeen Games | Card 39 | K2	"Scheurer-Késtner, with voice unbent,
+Stirred the “September Senate” to dissent?"	“One should try to live with his abilities rather than his deprivals.” — M.H.
+Jacuzzi	bath_toy	87	4	#AEA1FF	Ferd Forzinetti	© 1984 Missouri via USPS | Card 87 | A3	"Forzinetti saw beyond the bars,
+And knew the man behind the scars."	“Saddle your dreams before you ride'em.” — Mary
+Jacuzzi	bath_toy	33	1	#F7941D	"Geôrges
+Clemenceau"	© 2025 Seventeen Games | Card 33	"As patron zealot, fierce and proud,
+He shattered myths the state allowed?"	“Secrecy begets tyranny.” — Robert A.
+Jacuzzi	bath_toy	194	9	#AEA1FF	Louis J Grégori	© 2025 Seventeen Games | Card 194 | A2	"At the Panthéon, with pistol drawn,
+Grégori fired—but Dreyfus lived on."	“Security is a kind of death.” — Tennessee
+Jacuzzi	action	230	0	#FFFFFF	Le Grand Uh Oh!	© 2025 Seventeen Games | Card 230	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	“Some say the most mysterious question of all is WHY?” — Seventeen Games
+Jacuzzi	bath_toy	2	-1	#F7941D	Alfred Dreyfus	© 2025 Seventeen Games | Card 2	"Falsely condemned, though loyal and square,
+Dreyfus stood trial in a nation’s glare."	“Sometimes you’ve got to question your name to understand WHO you are.” — Seventeen Games
+Jacuzzi	bath_toy	67	3	#E1897A	Henri Poincaré	© 2025 Seventeen Games | Card 67 | J1	"Poincaré proved with numbers tight,
+Logic could move the wrong from right."	“Suffering is the sole origin of consciousness.” — Fyodor
+Jacuzzi	action	218	0	#FFFFFF	"Louis
+IV’s Surprise"	© 2025 Seventeen Games | Card 218	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	“The best proof of love is trust.” — Joyce
+Jacuzzi	bath_toy	35	1	#CDE6D0	Mathieu Dreyfus	© 2025 Seventeen Games | Card 35	"Mathieu fought with brotherly will,
+To clear a name the courts would kill."	“The dieting wars have got to stop.” — Lady
+Jacuzzi	bath_toy	79	4	#FFEDC7	Devil's Island	© 1984 Sri Lanka via Web | Card 79 | H2	"Dreyfus, alone on Île du Diable’s sand,
+Held fast to truth in a foreign land."	“The future belongs to crowds.” — Don
+Jacuzzi	bath_toy	162	8	#1FB25A	GG de Pellieux	© 2025 Seventeen Games | Card 162 | G3	"Pellieux charged with blind intent,
+Injustice cloaked as legal bent."	"“There are no mistakes, save one: the failure to learn from a mistake.” — Robert"
+Jacuzzi	bath_toy	75	4	#CDE6D0	Alexàndre Miller	© 2025 Seventeen Games | Card 75	"Though bound by harsh uitlander laws,
+He fought for truth without a pause?"	“This is the strange thing: Dancers don't age.” — Twyla
+Jacuzzi	bath_toy	3	-1	#1FB25A	Marié Picquart	© 2025 Seventeen Games | Card 3 | G2	"A “divine ufologist,” high in the sky,
+Picquart saw truth where conspiracies fly?"	“This love is silent.” — T. S.
+Jacuzzi	bath_toy	19	0	#E1897A	Hotel du Sphinx	© 2025 Seventeen Games | Card 19 | L1	"Behind closed doors they schemed and lied,
+The Sphinx their lair where truth had died."	“Thought is free.” — William
+Jacuzzi	bath_toy	47	2	#FFEDC7	Wastepaper Basket	© 2025 Seventeen Games | Card 47 | I2	"A maid's discovery in waste disposed,
+A scandal vast was thus exposed."	“To be an artist means never to avert one's eyes.” — Akira
+Jacuzzi	bath_toy	138	7	#DA3996	Jean-Vin Recho	© 2025 Seventeen Games | Card 138	"Jean-Vin spoke, but none replied,
+A footnote history brushed aside."	“Un paraíso conseguido sin esfuerzo no entusiasma al creyente.” — Pío
+Jacuzzi	bath_toy	190	9	#AAE0FC	Édouard Castelnau	© 2025 Seventeen Games | Card 190 | D2	"Castelnau’s scorn was sharp and wide,
+A cross of hate he wore with pride."	“Uncertainty is the normal state.” — Tom
+Jacuzzi	bath_toy	115	6	#AAE0FC	Gustave Hervé	© 1984 Franken or Bundy | Card 115 | E2	"Hervé marched with socialist pride,
+His pen a blade at Dreyfus’ side."	“Used to dunk and they criticized me for the dunk.” — Shawn
+Jacuzzi	bath_toy	206	9	#E1897A	FW Esterhazy	© 2025 Seventeen Games | Card 206 | K3	"Esterhazy, the true deceiver,
+Wrote France’s shame as the great misleader."	“Vision is the art of seeing things invisible.” — Jonathan
+Jacuzzi	action	224	0	#FFFFFF	Un Verre…?	© 2025 Seventeen Games | Card 224	"If there is a Parent on the table, send them out for a drink by shuffling them back into the draw pile.
+Discard after playing."	"“WHAT letters can sometimes be found inside words. (That’s a statement, not a question.)” — Seventeen Games"
+Jacuzzi	bath_toy	127	7	#1FB25A	Charles Dupuy	© 1984 La-la Predecessor | Card 127 | H1	"Dupuy stood still while tempests swirled,
+A cautious man in a shaken world."	“You are never too old to become younger!” — Mae
+Jacuzzi	bath_toy	182	9	#F7941D	Auguste Mercier	© 2025 Seventeen Games | Card 182	"Mercier claimed he knew the score,
+Yet paved the road to wrongful war."	“You can observe a lot by watching.” — Yogi
+Blood Bath	bath_toy	10	-1	#AAE0FC	Razor Wire Towel	© 2025 Seventeen Games | Card 10 | 16	"Barbs draw blood in the blink of an eye, and
+Baby’s sweet smile soon whispers goodbye."	Aaron E Zachea says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	106	5	#AAE0FC	Hot Sauce	© 2025 Seventeen Games | Card 106 | 47	Baby’s soft skin will suffer a loss when you spice up their bath with fiery red sauce.	Abby V Zachor says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	bath_toy	58	2	#955436	Quaking Drum	© 1978 Black Hawk or Watership | Card 58	"A bold sound with just one disadvantage:
+a minute’s pounding is permanent damage."	Abigail A Zack says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	action	213	0	#FFFFFF	Try an Uh Oh!	© 2025 Seventeen Games | Card 213	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	Abram R Zackrisson says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	157	8	#AAE0FC	Motor Oil	© 2025 Seventeen Games | Card 157 | 18	"Birds covered in sludge, struggling for air—
+the effect on Baby, too grim to compare."	Adalyn F Zacs says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	137	7	#1FB25A	"Quaint
+Phone Battery"	© 2025 Seventeen Games | Card 137 | 17	"Old batteries leak, and sometimes they run. Will it hurt Baby from toesies to tongue?"	Adam A Zact says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	6	-1	#AAE0FC	"Poisonous
+Mushrooms"	© 2025 Seventeen Games | Card 6 | 13	"Like gumdrops, they lead you astray —
+with one little nibble, your organs decay."	Addison H Zadak says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	94	4	#AAE0FC	"Handful of
+Thumbtacks"	© 2025 Seventeen Games | Card 94 | 45	"Thumbtacks can look exactly like candy —
+let Baby have’m, they’re probably dandy."	Adele S Zadeh says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	201	9	#AAE0FC	River of Oopsie	© 1978 Twyla’s Singin’ in It | Card 201 | 15	We save the past poops of a king or a queen; so why not preserve Baby’s tiny sardine?	Adeleide U Zadora says: “The brown fox jumps quickly over the zestful dog.”
+Blood Bath	bath_toy	5	-1	#AAE0FC	"Ring
+around the Rosie"	© 2025 Seventeen Games | Card 5 | 44	"Embrace this historic plague of renown:
+“Ashes, ashes, we all fall down….”"	Adeline T Zahir says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	bath_toy	22	0	#0171BB	The Family Cat	© 2025 Seventeen Games | Card 22	Kitty doesn’t like water. It’s one of her flaws. She also hates babies. Look at those claws!	Aiden P Zaltman says: “The quizzical vixen jumps past a friggin’ but swanky Dalmatian.”
+Blood Bath	bath_toy	110	5	#ED1B24	Water Color ca. 1950	© 2025 Seventeen Games | Card 110	"Asbestos and arsenic, toxic for sure.
+They make Baby sick. There’s really no cure."	Aileen E Zaman says: “The jumpy fox waltzes over the quick but lazy dog.”
+Blood Bath	bath_toy	14	-1	#CDE6D0	Power Drill	© 2025 Seventeen Games | Card 14	"The buzz might seem light, almost benign,
+until trepanning crosses your mind."	Alaina S Zamaneh says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	173	8	#AEA1FF	Jack and Jill	© 2025 Seventeen Games | Card 173	"Jack went down and Jill came after —
+cue the cruel, contagious laughter."	Alan T Zamani says: “The worn-out fox jumps quickly over the lazy dog.”
+Blood Bath	bath_toy	96	5	#FEF102	Venomous Spider	© 1978 Hi Yo or Ho | Card 96	"Itsy-bitsy will always prevail.
+Its venom leaves you sweaty and frail."	"Alana H Zamboni says: “Et voilà! The prized fox jams sickly over a brown dog, QED.”"
+Blood Bath	bath_toy	18	0	#AEA1FF	Romeo Void LP	© 2025 Seventeen Games | Card 18 | 33	"A vinyl LP. Let’s see how it plays.
+Its edge slices skin in 33 1/3 different ways."	Alejandro E Zambrano says: “A quick brown fox jumps over his lazy dog.”
+Tuba	action	227	0	#FFFFFF	Gobsmacking Surprise	© 2025 Seventeen Games | Card 227	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	Aleksandr Solzhenisyn says: “We always pay early for chasing after what is cheap.”
+Blood Bath	bath_toy	85	4	#AAE0FC	Asylum Escapee	© 2025 Seventeen Games | Card 85 | 31	"Delusions, fear, and logorrhea —
+now Baby’s friend has diarrhea."	Alex A Zameta says: “The lazy brown fox jumps over the quaking dog.”
+Blood Bath	bath_toy	82	3	#E1897A	Sierra Avalanche	© 2025 Seventeen Games | Card 82 | 48	"A bucket of ice dumped into the bath
+will mimic the force of an avalanche."	Alexander H Zamfir says: “A quick brown fox jumps over two lazy dogs.”
+Blood Bath	bath_toy	46	1	#DA3996	Hadean Phoenix	© 2025 Seventeen Games | Card 46	"Its feathers still burning, it’s fiery and hot. Don’t you think Baby has warmed up a jot?"	"Alexandra M Zammitti says: “Et voilà! The prized fox jams sickly over a brown dog, QED.”"
+Blood Bath	bath_toy	185	9	#AEA1FF	Animal Waste	© 2025 Seventeen Games | Card 185 | 32	"“Waste not, want not,” an old cliché —
+but that’s why manure’s still on display."	Alexis H Zamora says: “The lazy brown fox jumps over the quaking dog.”
+Blood Bath	bath_toy	177	9	#AAE0FC	Bag of Sewage	© 2025 Seventeen Games | Card 177 | 41	"This hospital waste smells terribly bad.
+It’s needles and blood; it’s all very sad."	Alice H Zamri says: “The quiet brown fox jumps coyly over the lazy dog.”
+Blood Bath	bath_toy	133	7	#955436	"Climate
+Crisis Reports"	© 2025 Seventeen Games | Card 133	"A billion case studies prove water will rise, 
+yet old fuddy-duddies dismiss it as lies."	Alicia C Zana says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	126	6	#FEF102	Winter Storm Amy	© 2025 Seventeen Games | Card 126 | 25	"Is Baby frozen, or acting deadpan? 
+(It’s not a real storm: we just borrowed a fan.)"	Alina E Zanardo says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	66	2	#73D8FF	"Unhealthy
+Carl’s Jr. Burger"	© 2025 Seventeen Games | Card 66	"Well past its due date, this patty should vex. Do you think Baby sees that really big X?"	Alisette I Zand says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	98	5	#AAE0FC	It’s the Virgin Mary	© 2025 Seventeen Games | Card 98 | 37	"You think we are joking, but really we’re not. This statue is stuffed with kilos of pot?"	Aliyah A Zandee says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	action	217	0	#FFFFFF	"Time to
+Rotate Overflow"	© 2025 Seventeen Games | Card 217	"Players pass their overflow piles to the player on their left.
+Discard after playing."	Allegra E Zanden says: “The broken fox jumps over the quick but lazy dog.”
+Blood Bath	bath_toy	70	3	#FEF102	"Risky
+Number 2 Pencil"	© 2025 Seventeen Games | Card 70 | 26	"An ill-advised jab, now Baby is blind.
+The plea for foresight, sadly declined?"	Allison C Zander says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	30	0	#AAE0FC	Oscar the Pedophile	© 2025 Seventeen Games | Card 30	"Slicked hair, crooked teeth, and a total waste. [This card is really in terrible taste.]"	Amara N Zanderink says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	74	3	#AEA1FF	"A Glass of
+Shardonnay"	© 2025 Seventeen Games | Card 74 | 38	"It sparkles and shines, hard to surpass.
+Below the surface, it’s all broken glass."	Amelia P Zanders says: “A quick brown fox jumps over his lazy dog.”
+Blood Bath	bath_toy	90	4	#AAE0FC	"Hazardous
+Benedict’s Elixir"	© 2025 Seventeen Games | Card 90 | 28	This agent is fatal: prepare for remembrance. Baby should show a little more temperance?	Amma E Zandgrond says: “The brown fox jumps quickly over the zestful dog.”
+Blood Bath	bath_toy	165	8	#FEF102	Easy-bake Grenade	© 2025 Seventeen Games | Card 165 | 22	"A tiny toy that fascinates —
+at least until it detonates."	Anabel N Zandi says: “The jumpy fox waltzes over the quick but lazy dog.”
+Blood Bath	bath_toy	26	0	#E1897A	"Gruesome
+Venus Flytrap"	© 2025 Seventeen Games | Card 26 | 42	"This carnivorous plant looks like a daisy,
+but watch what it does after tickling Baby."	Andrew A Zandstra says: “The lazy brown fox jumps over the quick frog.”
+Blood Bath	bath_toy	205	9	#AAE0FC	Fearless Alfa Wolf	© 2025 Seventeen Games | Card 205 | 35	"Lone wolf and master of all she surveys,
+she likes Baby best in a rich bordelaise."	Andy H Zandt says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	bath_toy	197	9	#AAE0FC	Happy Coyote	© 2025 Seventeen Games | Card 197 | 11	"Don't worry, Baby, coyotes are sweet.
+Ha ha, just kidding. It’s YOU that they'll eat."	Angel K Zandwijk says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	83	3	#F7941D	"Ritardando
+Rock a Bye"	© 2025 Seventeen Games | Card 83	"A moment of triumph, then comes the fall, and down will come Baby, cradle and all."	Angela R Zane says: “A quick brown fox jumps over his lazy dog.”
+Blood Bath	bath_toy	169	8	#CDE6D0	Cocaine Raccoon	© 2025 Seventeen Games | Card 169	"“Innocent Baby confronts twitching beast.”
+A thrilling headline, but a ghastly feast."	Anika D Zanesco says: “A quick brown fox jumps over his lazy dog.”
+Blood Bath	bath_toy	189	9	#CDE6D0	Devil Ducky	© 2025 Seventeen Games | Card 189	"This seductive fowl is strangely beloved:
+no one's too young to sign contracts in blood."	Annabelle A Zanetti says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	bath_toy	114	6	#FEF102	Electric Eel	© 2025 Seventeen Games | Card 114 | 23	One tiny shock and Baby's a cabbage. (Mentally speaking: limited damage.)	Anthony H Zang says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Blood Bath	bath_toy	118	6	#0171BB	Momma Bear	© 2025 Seventeen Games | Card 118	"Baby loves bears. They’re terribly sweet.
+Here’s one now making Baby her treat."	Anton O Zanini says: “The quick brown fox vigorously humps the lazy dog.”
+Blood Bath	bath_toy	141	7	#AAE0FC	Poison Ivy	© 2025 Seventeen Games | Card 141 | 14	"Those pretty flowers are such a delight.
+Too bad it means fifty blisters tonight."	April N Zanjani says: “The brown fox jumps quickly over the zestful dog.”
+Blood Bath	bath_toy	130	7	#F7941D	Robo Ducky	© 1978 Dickey’s Stewardess | Card 130	"This high-tech duck was built for sanitization; its buggy lasers, however, prefer amputation."	Arabella S Zanke says: “The lazy brown fox jumps over the quaking dog.”
+Blood Bath	bath_toy	181	9	#DA3996	"Spaghetti
+& Meatballs"	© 2025 Seventeen Games | Card 181	"Baby’s favorite food is a little bit old.
+Out of the fridge, it’s covered in mold."	Archer E Zanko says: “The quiet brown fox jumps coyly over the lazy dog.”
+Rubber Ducky	bath_toy	53	1	#FEF102	Astronaut Costume	© 2025 Seventeen Games | Card 53	"From sea to stars, where wonders lie,
+Baby giggles, spirits fly."	"Archibald Sartre says: “Commitment is each act, not a word.”"
+Blood Bath	bath_toy	34	1	#AAE0FC	Reckless Scythe	© 2025 Seventeen Games | Card 34 | 24	"This ancient tool of agriculture looks neat.
+It cuts through bone as quickly as wheat."	Ari G Zanon says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	145	8	#AAE0FC	"India Ink
+Tattoo Needles"	© 2025 Seventeen Games | Card 145 | 27	"For a single tattoo or full-body apparel,
+This dingy ol’ needle has never been sterile."	Aria Y Zant says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	50	2	#E1897A	Firecrackers	© 2025 Seventeen Games | Card 50 | 43	"Oh, Baby, look at them fly!
+Snap goes your spine, pop goes your eye!"	Ariana M Zantema says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	bath_toy	193	9	#1FB25A	Cleaning Bleach	© 2025 Seventeen Games | Card 193 | 12	"Acidic bleach wipes skin off of bones.
+We want a clean Baby: stop with the moans."	Art I Zantinge says: “The quick brown fox jumped over the lazy dog.”
+Blood Bath	action	209	0	#FFFFFF	"Gamble
+with Uh Oh!"	© 2025 Seventeen Games | Card 209	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	Arthur E Zapata says: “The brown fox jumps quickly over the zestful dog.”
+Blood Bath	bath_toy	86	4	#1FB25A	Pukey Sneakers	© 2025 Seventeen Games | Card 86	"Sweaty, stinky, and truly ball-busting.
+Is anything really much more disgusting?"	Arya S Zappata says: “The quick brown fox jumps over the crazy dog.”
+Blood Bath	bath_toy	161	8	#AEA1FF	Nuclear Soap	© 2025 Seventeen Games | Card 161 | 36	"Without the protection of impenetrable lead,
+this soap will surely burn Baby’s skin red."	Asher I Zariouh says: “A quick brown fox jumps over his lazy dog.”
+Blood Bath	bath_toy	62	2	#E1897A	"Too Much
+Bubble Bath"	© 2025 Seventeen Games | Card 62 | 46	"Those colorful effervescent bubbles 
+may cause Baby urinary troubles."	Ashley T Zastrow says: “A quick brown fox jumps over the zillionth dog.”
+Blood Bath	bath_toy	124	6	#AEA1FF	"Keeper of
+Tower Bridge"	© 2025 Seventeen Games | Card 124 | 34	"Nobody really wants Baby to drown, 
+but Tower Bridge is falling down...."	Astrid L Zavala says: “The broken fox jumps over the quick but lazy dog.”
+Tuba	action	215	0	#FFFFFF	Nefarious Uh Oh!	© 2025 Seventeen Games | Card 215	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	Athaniel Hawthorne says: “Sunlight is panting.”
+Blood Bath	bath_toy	153	8	#CDE6D0	Puritan’s Radio	© 2025 Seventeen Games | Card 153	"Here, Baby, take this into the tub.
+Enjoy the music; it’s never unplugged."	Athena U Zavalou says: “A quick brown fox jumps over two lazy dogs.”
+Blood Bath	bath_toy	42	1	#FEF102	Evil NSA Ducky	© 2025 Seventeen Games | Card 42	"Bugging a bathtub is rather quixotic.
+Is it also absurd, or just semiotic?"	Audrey A Zavalu says: “The dodgy brown fox jumps over the lazy quack.”
+Blood Bath	bath_toy	149	8	#AAE0FC	Libertine’s Radio	© 2025 Seventeen Games | Card 149 | 21	"Here, Baby, take this into the tub.
+Enjoy the music; it’s never unplugged."	August O Zavana says: “A quick brown fox jumps over his lazy dog.”
+Blood Bath	bath_toy	38	1	#73D8FF	Perfumed Soap	© 2025 Seventeen Games | Card 38	"Vanilla’s sweetness will surely hide
+a deadly dose of formaldehyde."	Austin R Zavoula says: “A quick brown fox jumps voluntarily upon this lazy dog.”
+Tuba	bath_toy	24	-1	#ED1B24	Grandpa’s Ashes	© 2025 Seventeen Games | Card 24 | B2	"I hope to die in my sleep like my grandfather, and not like the passengers in his car."	Benjamin Fanklin says: “Whatever is begun in anger ends in same.”
+Tuba	bath_toy	25	0	#F7941D	"The Fifth
+of November"	© 2025 Seventeen Games | Card 25 | I3	Oh no! An attempt by a group of English Catholics to jump into Baby’s bath.	Beth Rvis says: “He's the only stale thing in the swirling chaos.”
+Rubber Ducky	bath_toy	129	7	#CDE6D0	Bath Salts	© 1980 On a Peach | Card 129 | H	"Water so smooth, clear, and light,
+keeps Baby’s skin tender and bright."	Blake O'Connor says: “You shall know the truth and the truth shall make you incorrect.”
+Tuba	bath_toy	57	2	#955436	Mario Mothers	© 2025 Seventeen Games | Card 57	A couple of Italian-American plumbers whose animated misadventures are even stranger than those of their children.	C S Lews says: “It was a rich pace: as rich as plumcake.”
+Tuba	bath_toy	166	8	#FFEDC7	Recursive Bathtub	© 2025 Seventeen Games | Card 166 | D1	This tub within a tub (within a tub) should affect Baby's bath more than (more than (more than)) it does.	Cara Lynn Sultz says: “Suck in high school for the rest of my natural life. Talk about hell.”
+Rubber Ducky	bath_toy	172	8	#AEA1FF	"Character
+Figurines"	© 1980 Down a Drain | Card 172 | R	"From these tiny dolls great stories unfold, timeless tales that never grow old."	Casey Hardy says: “Happiness was but the occasional phrase in a general drama of pain.”
+Tuba	bath_toy	84	3	#FEF102	"Another
+Tango in Paris"	"© 2002 Hundred Smackers, Musically | Card 84 | C3"	"This sequel to Bertolucci’s film portrays a relationship that starts poorly, ends poorly, and is unsuitable for the bath. Plus a dog."	Chares Dickens says: “Never lose your lips to those whom you have already opened your heart.”
+Tuba	bath_toy	139	7	#DA3996	"Old-fashioned
+Melting Clock"	© 2025 Seventeen Games | Card 139	This Dalí-esque exploration of the fluidity of time sticks to the top of Baby's mouth.	"Daielle Steel says: “It was the cruelest of destiny’s ticks, the death of a young person.”"
+Tuba	bath_toy	116	5	#CDE6D0	"Quickly Pick
+Up Food Rule"	© 2025 Seventeen Games | Card 116	"It’s an urban myth that picking up food from the floor makes it safe to eat, isn’t it?"	Dante Alghieri says: “A mighty fame follows a tiny spark.”
+Tuba	bath_toy	143	7	#FFEDC7	"Pupu
+Platter Poetry"	© 2025 Seventeen Games | Card 143 | C2	This Polynesian appetizer is an alliterative smorgasbord of authorial delight.	Dbasish Mridha says: “A life without trouble and tragedy is boring and not a lot for comedy.”
+Rubber Ducky	bath_toy	8	-1	#AAE0FC	Squirt Toy	© 2025 Seventeen Games | Card 8	"A plastic whale spout or water gun,
+these squirting toys are so much fun!"	Dweezil Berra says: “In baseball you must know nothing.”
+Tuba	bath_toy	207	9	#CDE6D0	"Crash
+Test Geniuses"	© 2025 Seventeen Games | Card 207	These life-sized anthropomorphic figures simulate the precise size and weight of academics during traffic collisions.	Edith Pia says: “I think you have to pay for love with bitter tars.”
+Rubber Ducky	bath_toy	160	8	#CDE6D0	Mommy’s Perfume	© 1980 By a Fire | Card 160 | B	"Vanilla, honeysuckle, and fruity spoom: they fill up the bath with their own sweet perfume."	Elmer A Heinlein says: “Never be corrected to outstubborn a cat.”
+Tuba	bath_toy	12	-1	#FFEDC7	"John Cage’s
+Wah-wah Pants"	© 2025 Seventeen Games | Card 12 | J2	"Ah, the sound of silence. It fills Baby’s bath the same way music fills a composer’s pants."	Elvis Cosello says: “He's no angel. He's no saint.”
+Tuba	bath_toy	104	5	#FEF102	"A
+Jellyfish Washcloth"	© 2025 Seventeen Games | Card 104 | D2	"Woven from the bioluminescent membrane of a jellyfish, it shimmers faintly in the dim light."	Emily Dickinon says: “There is no frigate like a book to take us lads away.”
+Tuba	bath_toy	20	-1	#AEA1FF	Narwhal Cocktail	© 2025 Seventeen Games | Card 20 | G1	"Raise a cetacean toast for Baby, with a blunt snout and a taste for seawater."	Ernst Hemmingway says: “We are all apprentices in a raft where no one ever becomes a master.”
+Tuba	bath_toy	151	7	#AEA1FF	Cathedrals of Cheese	© 2025 Seventeen Games | Card 151 | G2	"Ornate buildings made from Limburger, Brie, Pei, Taleggio, Stinking Bishop, Gehry, and Roquefort."	Fida Kahlo says: “I love you more than my own kin.”
+Rubber Ducky	action	212	0	#FFFFFF	Go Swap Hand	© 2025 Seventeen Games | Card 212	"Swap your hand with the player of your choice.
+Discard after playing."	Finley Garbo says: “I want 2 be alone.”
+Tuba	bath_toy	28	0	#0171BB	"The
+Reality Shredder"	© 2025 Seventeen Games | Card 28	"This debonair shredder’s wetter, redder, and all around better than any other … whatever."	Frodo Bggins says: “I think a servant of the enemy would look farer and feel fouler.”
+Tuba	bath_toy	32	0	#0171BB	Requisite Corpse	© 2025 Seventeen Games | Card 32 | F1	"This flesh-made plank is de rigueur mortis. It's required, admired, and occasionally dog-tired."	George R Martin says: “One kin means peace.”
+Rubber Ducky	bath_toy	73	3	#FFEDC7	High Tin Whistle	© 1980 In a Lake | Card 73 | L	"Let a baby twitter, tweet, and pipe.
+Won’t it make life an utter delight?"	Greta Yankovic says: “It's hard to expose creativity and humor.”
+Tuba	bath_toy	95	4	#FFEDC7	"The Specific
+Details of Death"	© 2025 Seventeen Games | Card 95 | D3	"For God’s sake, after writing the cause of death, include the details before time runs out. Then maybe read the Death Note to Baby?"	H P Lovecraf says: “I fear my enthusiasm lags when real work is demanded of me.”
+Tuba	bath_toy	179	8	#FFEDC7	Exquisite Corpse	© 2025 Seventeen Games | Card 179 | B3	This Dadaist exercise explores the collective unconscious without any actual rotting flesh.	Harki Murakami says: “Suffering is a misunderstood pan.”
+Rubber Ducky	bath_toy	60	2	#ED1B24	A Hug from Papa	© 2025 Seventeen Games | Card 60	"How could Baby be sad or blue
+when Father’s hug brings joy anew."	Hayden S Truman says: “A buck stops here.”
+Tuba	bath_toy	88	4	#CDE6D0	Chastity Galoshes	© 2025 Seventeen Games | Card 88	"This item won’t prevent sexual stimulation, but it sure keeps Baby’s feet dry."	"Henry David Thorau says: “We know but a few men, a great many cats and breeches.”"
+Tuba	bath_toy	199	9	#AAE0FC	"The
+Imaginary Trout"	© 2025 Seventeen Games | Card 199	"Swimming with an imaginary trout sounds whimsical, but it’s dangerously close to kissing a wet tuna."	Henry David Threau says: “Dreams are the touchtones of our character.”
+Tuba	bath_toy	183	9	#FFEDC7	Dada’s TV Bra	© 2025 Seventeen Games | Card 183 | I2	"Video tubes, copper wires, foot switches, plexiglass, vinyl straps, and Charlotte Moorman."	"Hristina Aguilera says: “We take food for grated, but it isn't a luxury for many people.”"
+Rubber Ducky	bath_toy	108	5	#ED1B24	"Comical
+Clown Paint"	© 1980 With an Awl | Card 108	"Get a grip, Baby — put on a show.
+Perhaps you can be our little Pierrot?"	"Indigo Adams says: “The haiku to the Great Question of Life, the Universe and Everything is forty-two.”"
+Tuba	bath_toy	76	3	#0171BB	"Lucky
+Seven Universes"	© 2025 Seventeen Games | Card 76 | E2	"C’mon, throw this cumulative timescale into the bath and see what happens. Will Baby, water, tub, or even atoms still exist?"	J D Saliger says: “All mothers are lightly insane.”
+Tuba	bath_toy	163	8	#FEF102	A Marmalade Ape	© 2025 Seventeen Games | Card 163	This sticky simian likes making faces and throwing jam against the walls.	Jmes Carville says: “You have to have harp elbows if you want to change something.”
+Tuba	bath_toy	102	5	#CDE6D0	"A
+Jellyfish Loofah"	© 2025 Seventeen Games | Card 102	Its translucent tendrils provide an exfoliation experience that is both mesmerizing and unsettling.	Johannes Keple says: “Plants move in ellipses with the sun at one focus.”
+Tuba	bath_toy	159	8	#FFEDC7	"Furry
+Baseball Cap"	© 2025 Seventeen Games | Card 159 | H3	"Méret Oppenheim cried, ""Waiter, a little more fur!” This is not your mother’s fur-lined teacup."	John Drden says: “Dancing is the poetry of the fet.”
+Tuba	bath_toy	100	4	#FFEDC7	Endoscopic Tuba	© 2025 Seventeen Games | Card 100 | E1	The eponymous Tuba! A musical instrument of sensors and lights that probes deep in the body.	John F Kenndy says: “It takes two to make pace.”
+Rubber Ducky	bath_toy	101	5	#F7941D	"Folksy
+Pirate Patch"	© 1980 By a Fire | Card 101	"Arr! A damp pirate, with treasure to spare.
+Keep the booty — or will you share?"	Jordan Vonnegut says: “Science is magic which works.”
+Tuba	bath_toy	80	3	#ED1B24	"Moby Duck
+Duck Goose"	© 2025 Seventeen Games | Card 80 | B1	"This duck floats in phenomenological angst, plotting its revenge against the wrinkled hand that squeezed it."	"Jorge Luis Bores says: “Day and night, their frail and crippled hips defy the tempest.”"
+Tuba	bath_toy	72	3	#AAE0FC	"An
+Escherian Dreamscape"	© 2025 Seventeen Games | Card 72	This insubstantial vision simultaneously floods and empties the tub.	Jorge Lus Borges says: “Every novel is an ideal plan inserted into the realm of reality.”
+Tuba	bath_toy	52	1	#FFEDC7	"Near the
+Half-life of Lutetium 176"	© 2025 Seventeen Games | Card 52 | G3	"Heck, one second it’s this; the next, something else. Really, what kind of second is it?"	Joyce Brothrs says: “The best proof of love is rust.”
+Rubber Ducky	bath_toy	117	6	#955436	Foam Bath Numbers	© 1980 Into Bits | Card 117 | C	"Look at Baby in the bath,
+making mischief, doing math."	Kennedy Teresa says: “Prayer must surely be the mortar that holds our house together.”
+Tuba	bath_toy	135	6	#A4DD00	"The
+Elephant Celebes"	© 2025 Seventeen Games | Card 135	A giant mechanical pachyderm by the German Dadaist Max Ernst.	"Kim Harriso says: “Of course i’m shielding her, you broken father!”"
+Tuba	bath_toy	147	7	#FFEDC7	Bowler Hat	© 2025 Seventeen Games | Card 147 | H2	"Magritte feared milliners too much, but haberdashers just enough."	L K Smuels says: “Government succeeds by filing.”
+Tuba	bath_toy	64	2	#FFEDC7	Apostle Paul	© 2002 Valiant or Harry | Card 64 | L3	"Not one of the Twelve, this religious figure is well-traveled, preaches miracles, and prefers body wash to shampoo."	Lady Bird Johnon says: “The cash of ideas is the sound of freedom.”
+Tuba	action	226	0	#FFFFFF	"An
+Average Surprise"	© 2025 Seventeen Games | Card 226	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Laurell K Hamlton says: “Neither love nor evil conquers all, but evil chats more.”"
+Rubber Ducky	bath_toy	152	8	#DA3996	Uncooked Pasta	© 1980 With an Awl | Card 152	"Corkscrews, spirals, pillows, and tubes.
+Every shape, though rarely in cubes!"	Lilith Shakespeare says: “Every what hath a wherefore.”
+Tuba	bath_toy	167	8	#FFEDC7	A Molten Popsicle	© 2025 Seventeen Games | Card 167 | H1	"This inimical treat tempts the bather with its own implausibility, like a Mondrian softball or a sink made of soap."	Luren Bjorkman says: “True friendship is as rare as tin lotuses on a single stalk.”
+Tuba	bath_toy	36	0	#0171BB	"The Reaping
+of Oscar Wilde"	© 2025 Seventeen Games | Card 36 | F2	"When Death came for Wilde, he sighed, “How inconvenient—I’ve left my wit in the bath.”"	Ma West says: “Those who are easily shocked should be hocked more often.”
+Tuba	bath_toy	92	4	#F7941D	"Single
+Frame of Film"	© 2025 Seventeen Games | Card 92 | I1	"Egads! Hand, razor blade, eyeball. Even one frame of film can have an incredible impact, right?"	Mahama Gandhi says: “My lie is my message.”
+Tuba	bath_toy	211	9	#FEF102	Soft Toilet	© 2025 Seventeen Games | Card 211 | C1	"Loose stools may be watery, mushy, or shapeless. Treatment may involve dietary changes, soft toilets, and Claes Oldenburg."	Maranne Moore says: “Your horns are the best part of you.”
+Tuba	bath_toy	155	8	#0171BB	"Fear of
+Passing Gas"	© 2025 Seventeen Games | Card 155 | L1	A loss of dignity that is lighter than air.	"Marion Arry says: “This is not a ham, not a game. This is the real stuff.”"
+Rubber Ducky	action	208	0	#FFFFFF	Go Swap Overflow	© 2025 Seventeen Games | Card 208	"Swap your Overflow Pile with the player of your choice.
+Discard after playing."	Morgan Roosevelt says: “It's your life—but only if u make it so.”
+Tuba	bath_toy	191	9	#FFEDC7	"Sister
+Sister bo-Sister"	© 2025 Seventeen Games | Card 191 | F3	"Sister sister bo-sister, banana-fana fo-fister, fee-fi-mo-mister — sister!"	"Neil Armstrog says: “That's one small step for a man, one giant lap for mankind.”"
+Rubber Ducky	bath_toy	81	4	#CDE6D0	Game Ball	© 1980 Under a Rug | Card 81 | S	"May I play pitch and catch with you?
+We’ll laugh and play the whole night through."	Noel Byron says: “They never want who die in a great cause.”
+Tuba	bath_toy	48	1	#FFEDC7	"Mr. George
+Carlin's Gigabyte"	© 2002 1/4 2 9 ish | Card 48 | A2	"Drop this in the bath and see what happens. Modern man, philosopher, comedian, or surrealist — does it matter?"	Patricia Conwell says: “Leave covered pavement like soggy cereal.”
+Tuba	bath_toy	131	6	#ED1B24	"Understanding
+D Baryon’s Life"	© 2025 Seventeen Games | Card 131 | A3	"Gosh, not around very long, but he's a metric for sophisticated surreality. We know who he is, but do you?"	Paul Nwman says: “You only row when you are alone.”
+Tuba	bath_toy	112	5	#ED1B24	"Extreme Golf
+Swingers Club"	© 2025 Seventeen Games | Card 112 | A1	"A disappointing play on words, like the 19th Hole Rendezvous, the Foreplay Fairway, or the Par-tner Swap."	Paul Tillic says: “Astonishment is the rot of philosophy.”
+Tuba	bath_toy	187	9	#0171BB	Yoko Ono Scream	© 2025 Seventeen Games | Card 187 | E3	"It's loud. It's shrill. It's bone-shaking. And if its meaning eludes you, consider yourself lucky."	Pul Newman says: “You only row when you are alone.”
+Tuba	bath_toy	40	1	#FFEDC7	"Ceci n'est
+pas un jouet"	© 2025 Seventeen Games | Card 40 | K1	"Pas possible! Si ce n'est pas un jouet, peut-être que Bébé n'est pas vraiment un bébé."	Ralph Waldo Eerson says: “Knowledge is knowing that we cannot now.”
+Tuba	bath_toy	119	6	#73D8FF	Schrödinger’s Duck	© 2025 Seventeen Games | Card 119	"One foot in the quantum domain, one in tangible reality, and one in a bookshop in Hull."	"Robert Joran says: “Bloody ashes, woman. This isn't a metaphor for anything! it's just bots.”"
+Rubber Ducky	bath_toy	204	9	#AEA1FF	Twinkle Twinkle	© 2025 Seventeen Games | Card 204	"Twinkle, twinkle, little star,
+how I wonder what you are."	"Seventeen Games says: “A HAIKU is a precise poem. Like a quotation, you really must pay attention to every word. Maybe also every letter.”"
+Rubber Ducky	bath_toy	69	3	#0171BB	"Hard
+Plastic Kazoo"	© 1980 By Bears | Card 69	"Put a tiny kazoo in that playful hand.
+Will Baby’s future include a piano grand?"	Seventeen Games says: “Each piece of information is encrypted by one or more puzzles.”
+Rubber Ducky	bath_toy	89	4	#AEA1FF	Finger Paint	© 1980 Knocked In | Card 89 | Q	"Stars and rainbows on forehead and cheeks. (After the bath, the cleanup takes weeks!)"	"Seventeen Games says: “For example, to find WHAT, you’ll need to combine the answers from three different puzzles.”"
+Rubber Ducky	bath_toy	4	-1	#DA3996	Rubber Anchor	© 2025 Seventeen Games | Card 4	"You think Baby’s done for the day.
+Highly unlikely. Anchors away!"	"Seventeen Games says: “Four identify a WHO, WHAT, WHERE, and WHEN.”"
+Rubber Ducky	action	238	0	#FFFFFF	Go Swap Overflow	© 2025 Seventeen Games | Card 238	"Swap your Overflow Pile with the player of your choice.
+Discard after playing."	Seventeen Games says: “Good luck!”
+Tuba	action	235	0	#FFFFFF	"Rearrange
+Overflows"	© 2025 Seventeen Games | Card 235	"Players pass their overflow piles to the player on their left.
+Discard after playing."	"Seventeen Games says: “I will tell you how to solve the HAKU. Yes, I’m really that helpful.”"
+Rubber Ducky	bath_toy	176	9	#F7941D	Unicorn Ducky	© 1980 Under a Rug | Card 176	"A mythical animal with a single straight horn, naked as the day it was surely not born."	"Seventeen Games says: “In the meantime, here are some hints to get you started on this deck .”"
+Rubber Ducky	action	219	0	#FFFFFF	Glorious Surprise	© 2025 Seventeen Games | Card 219	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	Seventeen Games says: “More hints can be found on our website.”
+Rubber Ducky	bath_toy	113	6	#73D8FF	Basic Flippers	© 1980 Out of a Sleigh | Card 113	"Got a pair of flippers, make a joyful splash.
+Will the pitter-patter bring a smile that’ll last?"	Seventeen Games says: “Note that there are special symbols on every card.”
+Rubber Ducky	bath_toy	156	8	#73D8FF	Chaotic Mini Mall	© 1980 Down a Drain | Card 156	"It’s a fine piazza, plastic and small. Do you think it’s better than the neighborhood mall?"	Seventeen Games says: “Our website can be found on the back of the rules booklet.”
+Blood Bath	action	242	0	#FFFFFF	Ritual Surprise	© 2025 Seventeen Games | Card 242	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Seventeen Games says: “See that quick brown fox / She looks rather sly, tricky / Maybe let’er go!”"
+Rubber Ducky	bath_toy	180	9	#A4DD00	Water Wheel	© 1980 By a Thug | Card 180	"This cheerful wheel invites endless play, whirling and spinning, we’re carried away."	Seventeen Games says: “Sometimes you have to break yourself apart to figure out WHO you are.
+Rubber Ducky	bath_toy	132	7	#CDE6D0	Bubble Machine	© 1980 Fits | Card 132	"Battery-powered and all of a sudden
+hundreds of bubbles at the press of a button."	Seventeen Games says: “The calendar symbol represents WHEN.”
+Rubber Ducky	bath_toy	136	7	#CDE6D0	"Groovy
+Food Coloring"	© 1980 Down the Stairs | Card 136 | M	"Yellow, purple, green, and day-glow,
+Baby's bath becomes a rainbow."	Seventeen Games says: “The Japanese symbol for poetry represents HAIKU.”
+Tuba	action	234	0	#FFFFFF	Pull the Plug	© 2025 Seventeen Games | Card 234	"Discard all the cards in the bathtub. The water level is now 0.
+Discard after playing."	Seventeen Games says: “The only way to get WHERE you want to go is to be on the right track.”
+Rubber Ducky	bath_toy	121	6	#955436	Foam Basketball	© 1980 In a Lake | Card 121 | A	"Two points, three points, five points, nine!
+A mysterious game that none can divine."	Seventeen Games says: “The person symbol represents WHO.”
+Rubber Ducky	bath_toy	125	6	#CDE6D0	Ballerina Costume	© 1980 Out to Sea | Card 125	"Pointe shoes, leotards, and perhaps a tiara. That’s just today — can't wait for tomorrow!"	Seventeen Games says: “The three jigsaw symbols represent WHAT.”
+Rubber Ducky	bath_toy	37	0	#A4DD00	Atmospheric Bubbles	© 2025 Seventeen Games | Card 37	"Bubbles float and gleam so bright;
+Baby’s joy, a lovely sight."	"Seventeen Games says: “The WHAT is a thing or an abstraction of a thing, or an idea.”"
+Rubber Ducky	bath_toy	49	1	#CDE6D0	"Petite
+Gumball Ducky"	© 2025 Seventeen Games | Card 49 | E	"Did I just see a ducky dispense
+a piece of gum as fair recompense?"	"Seventeen Games says: “The WHEN is a time, like a date or a holiday.”"
+Rubber Ducky	bath_toy	41	1	#FFEDC7	Pilgrim Ducky	© 2025 Seventeen Games | Card 41 | O	"It’s a real cute Pilgrim hat.
+Would Baby giggle wearing that?"	"Seventeen Games says: “The WHERE is a place — like a city, state, or landmark.”"
+Rubber Ducky	bath_toy	29	0	#955436	Swim Goggles	® 0000 Manila Bond | Card 29	"Our thoughts run wild, the mind just boggles, when Baby swims in stylish goggles!"	Seventeen Games says: “The WHO is the name of a person.”
+Rubber Ducky	bath_toy	1	-1	#AAE0FC	Row Row Row	© 2025 Seventeen Games | Card 1	"We sail together inside bathtub or stream, merrily, merrily, life is but a dream."	Seventeen Games says: “There are five critical pieces of information hidden in this deck.”
+Rubber Ducky	bath_toy	97	4	#955436	Bath Books	© 1980 Down a Drain | Card 97 | G	"A half-dozen books — terrific indeed!
+And the perfect gift, if Baby could read."	Seventeen Games says: “Those three different answers — when combined — become a brand new puzzle to solve.”
+Tuba	action	232	0	#FFFFFF	Mysterious Surprise	© 2025 Seventeen Games | Card 232	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Seventeen Games says: “To get WHAT you want, train hard, fight battles, and know when to give up.”"
+Rubber Ducky	bath_toy	184	9	#E1897A	"Impressive
+Plastic Fruit"	© 1980 Into Bits | Card 184	"It’s a bowl of fresh fruit, and all of them fake.
+Pineapple or pear — which one will you take?"	"Seventeen Games says: “We all know WHAT letters make words, but what about the reverse.”"
+Rubber Ducky	bath_toy	105	5	#A4DD00	Cowboy Ducky	© 1980 Under a Rug | Card 105	"Quick-draw McBaby goes into the bath.
+Here’s what you get: big giggles and laughs!"	Seventeen Games says: “We really love chaining puzzles together!”
+Blood Bath	action	240	0	#FFFFFF	Ominous Surprise	© 2025 Seventeen Games | Card 240	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Seventeen Games says: “WHAT can one say about Romeo and Juliett— how about, Bravo!”"
+Blood Bath	action	223	0	#FFFFFF	A Foreseen Surprise	© 2025 Seventeen Games | Card 223	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	Seventeen Games says: “WHAT cracks me up? Letters and CARD-tography!”
+Rubber Ducky	bath_toy	188	9	#73D8FF	"Colorful
+Playdough"	© 1980 On a Peach | Card 188	"Baby, oh Baby, no need to cry.
+This bath-safe clay will never run dry."	Seventeen Games says: “WHAT is worse than seeing double!”
+Rubber Ducky	bath_toy	192	9	#955436	Lovely Cupcakes	© 1980 By a Fire | Card 192 | I	"Super moist and safe for the tummy;
+a little soggy, but perfectly yummy."	"Seventeen Games says: “WHAT requires order, and then color. That’s the long and the short of it.”"
+Blood Bath	action	241	0	#FFFFFF	Queasy Surprise	© 1978 Ryman’s L. Frank | Card 241	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Seventeen Games says: “WHAT sounds like Rose, and the Count ate. Then it’s just a matter of thinking in black and white in color.”"
+Rubber Ducky	bath_toy	200	9	#CDE6D0	Vertiginous Windwheel	© 2025 Seventeen Games | Card 200	"Ask a baby to twirl with glee —
+could a pinwheel be the key?"	"Seventeen Games says: “WHEN you want to have a good date, always substitute character for nonsense.”"
+Rubber Ducky	bath_toy	196	9	#955436	Color Capsules	© 2025 Seventeen Games | Card 196 | D	"Tiny bath bombs explode into color. Nothing, says Baby, could be farther from duller."	Seventeen Games says: “WHERE can you find the deaths of twenty-six children in thirteen rhyming dactylic couplets?”
+Tuba	action	233	0	#FFFFFF	Puzzling Surprise	© 2025 Seventeen Games | Card 233	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	"Seventeen Games says: “WHO are you — if you’re pretty, clean, rich, or politic, you may be Sutton, Unger, Ward, or yourself.”"
+Blood Bath	action	222	0	#FFFFFF	Hoist the Plug	© 2025 Seventeen Games | Card 222	"Discard all the cards in the bathtub. The water level is now 0.
+Discard after playing."	Seventeen Games says: “WHO is your better half?”
+Rubber Ducky	bath_toy	148	8	#1FB25A	Toy Boats	© 1980 Knocked In | Card 148	"Splish splash — look at those toy boats go! Catamarans, dinghies, sloops, and row."	Seventeen Games says: “You may solve the puzzles in any order.”
+Rubber Ducky	bath_toy	65	2	#73D8FF	"Plump
+Calzone Squeezy"	© 2025 Seventeen Games | Card 65	"It’s a nice day for a small taste of Italy —
+why not piatto del giorno from Sicily?"	Seventeen Games says: “You must find all five pieces of information to understand your assignment.”
+Tuba	bath_toy	175	8	#AAE0FC	"Roaming 254
+Quintillion Years"	© 2025 Seventeen Games | Card 175	"Baby, that’s close to eight ronnaseconds. If you understand why, is that a good start?"	Shaun Hic says: “And the man who dreamt of light has tripped and fallen in a hole.”
+Tuba	bath_toy	171	8	#0171BB	PowerClippy 2.0	© 2025 Seventeen Games | Card 171 | K2	This useless paperclip now comes with useless turbo-boosters. “Call me Art.”	Simone Wel says: “Pain is the rot of knowledge.”
+Tuba	bath_toy	195	9	#E1897A	"The
+Andalusian Eyeball"	© 2025 Seventeen Games | Card 195	"A surveilling paella, served by your ex’s new lover. Quite impossible to ignore."	Terr Pratchett says: “Never trust a species that gins all the time. It’s up to something.”
+Tuba	bath_toy	203	9	#FFEDC7	Stoned Soup	© 2025 Seventeen Games | Card 203 | J3	"A flavorful, euphoric, and occasionally psychedelic brew. If this doesn't sound odd, have another sip."	Thomas Fller says: “Wine hath downed more men than the sea.”
+Tuba	bath_toy	56	2	#0171BB	Mario Fathers	© 2025 Seventeen Games | Card 56 | K3	A couple of Italian-American plumbers whose animated misadventures are even stranger than those of their children.	"To Hanks says: “I've made over twenty moves, and five of them are good.”"
+Tuba	bath_toy	44	1	#F7941D	"Asanawa
+Party Gifts"	© 2025 Seventeen Games | Card 44 | J1	"These binding ropes have many uses, most of which are best unmentioned, such as kinbaku, kinbaku-bi, and khibari. (Oops.)"	Victor Hug says: “To stud in paris is to be born in paris!”
+Tuba	action	220	0	#FFFFFF	Nefarious Uh Oh!	© 2025 Seventeen Games | Card 220	"Reverse the win condition of the game. For example, if the current win condition contains the word “fewest” or “least,” it’s now “most” or “greatest,” and vice versa.
+Discard after playing."	"W C Fiels says: “Down in a cold vat of whiskey? death, where is thy sting?”"
+Tuba	bath_toy	128	6	#0171BB	"Tiny Dose
+of Foscarnet"	© 2025 Seventeen Games | Card 128 | L2	This drug used to treat herpes viruses will turn the water a whiter shade of pale.	"W Griffith says: “Movies are written in sad: applauded today, forgotten tomorrow.”"
+Tuba	bath_toy	16	-1	#1FB25A	Lobster Telephone	© 2025 Seventeen Games | Card 16	"The call of wild is a call of nature, Baby, and as such not really a call at all."	William Sakespeare says: “My sol is in the sky.”
+Tuba	bath_toy	68	2	#CDE6D0	"An Interest in
+the King in Yellow"	© 2025 Seventeen Games | Card 68	Any idea the wavelength you must be on to sink into Robert W. Chambers’ supernatural stories?	William Shakepeare says: “As full of spirit as the moth of may.”
+Rubber Ducky	bath_toy	9	-1	#FEF102	Sea Life Figurines	© 2025 Seventeen Games | Card 9	"Whales, dolphins, and colorful fishes. Sea-horses, mermaids — whatever one wishes!"	
+Rubber Ducky	bath_toy	13	0	#CDE6D0	Animal Hats	© 2025 Seventeen Games | Card 13 | P	"Elephant, tiger, and maybe gorilla —
+Baby’s headgear’s a wildlife flotilla."	
+Rubber Ducky	bath_toy	17	0	#F7941D	Swim Mask	® 0000 Mica Igneous | Card 17	"Backstroke, butterfly, swift as the tide;
+but when Baby crawls it fill us with pride!"	
+Rubber Ducky	bath_toy	45	1	#0171BB	Plates and Mugs	© 2025 Seventeen Games | Card 45	"Everything’s ready and on display
+in Baby’s delightful water café."	
+Rubber Ducky	bath_toy	54	2	#F7941D	"Pretty
+Ripe Banana"	© 2025 Seventeen Games | Card 54	"Curved and soft, a funny fruit,
+it also works as a tasty flute."	
+Rubber Ducky	bath_toy	61	2	#FFEDC7	"Prize
+Oscar Statuette"	© 2025 Seventeen Games | Card 61 | N	I don't think Baby overreaches when giving those wonderful award-winning speeches!	
+Rubber Ducky	bath_toy	71	3	#AEA1FF	Beach Ball	© 1980 By a Fire | Card 71 | T	No sand is required; neither is turf. This bright-colored ball thrives in bath-water surf.	
+Rubber Ducky	bath_toy	77	3	#CDE6D0	"Celebration
+in November"	© 1980 Ennui | Card 77	"A Thanksgiving snapshot full of cheer
+makes Baby giggle, loud and clear."	
+Rubber Ducky	bath_toy	93	4	#A4DD00	Foam Bath Letters	© 1980 With an Awl | Card 93	"Look at Baby in the tub,
+writing poems — “Aye, there’s the rub.”"	
+Rubber Ducky	bath_toy	109	5	#955436	Awesome Balloon	© 1980 With an Awl | Card 109 | J	"It’s a soft pillow, light as a swoon.
+Will its bright color chase away gloom?"	
+Rubber Ducky	bath_toy	140	7	#0171BB	"Hello,
+Frère Jacques"	© 1980 Ennui | Card 140	"Raise spirits and water level with a song: Morning bells are ringing, ding, dang, dong."	
+Rubber Ducky	bath_toy	144	8	#CDE6D0	"Underwater
+Flashlight"	© 1980 Out of a Sleigh | Card 144 | K	"A waterproof flashlight for exploration:
+a fanciful way to promote education."	
+Rubber Ducky	bath_toy	164	8	#E1897A	Pat-A-Cake	© 1980 Some Tacks | Card 164	"Pat-a-cake, pat-a-cake, baker's man,
+bake me a cake as fast as you can!"	
+Rubber Ducky	bath_toy	168	8	#955436	Toy Robot	© 1980 Down the Stairs | Card 168 | F	"“AF-FIRM-A-TIVE!” bleeps this machine,
+a welcome addition to the bathing routine."	
+Rubber Ducky	action	216	0	#FFFFFF	Certain Surprise	© 2025 Seventeen Games | Card 216	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	
+Rubber Ducky	action	221	0	#FFFFFF	Huge Surprise	© 2025 Seventeen Games | Card 221	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	
+Rubber Ducky	action	236	0	#FFFFFF	Sensational Surprise	© 2025 Seventeen Games | Card 236	"If you’re not holding a Parent, you must play this card. Scan QR code to determine effect.
+If this card can't be scanned, add it to your Overflow Pile."	
+Rubber Ducky	action	237	0	#FFFFFF	Go Drain Tub	© 2025 Seventeen Games | Card 237	"Discard all the cards in the bathtub. The water level is now 0.
+Discard after playing."	
+Rubber Ducky	parent	239	0	#000000	Teri Glen Skirsh	© 2025 Seventeen Games | Card 239	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Rubber Ducky	parent	249	0	#000000	Tuc Boarseman	© 2025 Seventeen Games | Card 249	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Rubber Ducky	parent	250	0	#000000	Yolloh Dell	© 2025 Seventeen Games | Card 250	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Rubber Ducky	parent	251	0	#000000	Zane Alltry	© 2025 Seventeen Games | Card 251	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Blood Bath	parent	243	0	#000000	"Riu
+Fetashat Mensh"	© 2025 Seventeen Games | Card 243	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Blood Bath	parent	253	0	#000000	Rod H Theftage	© 2025 Seventeen Games | Card 253	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Blood Bath	parent	255	0	#000000	"Toni (Nice
+Red Introvert)"	© 2025 Seventeen Games | Card 255	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Blood Bath	parent	256	0	#000000	Tammi O’Lol	© 2025 Seventeen Games | Card 256	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Jacuzzi	parent	231	0	#000000	"Leon
+Daepe Huiszany"	© 2025 Seventeen Games | Card 231	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Jacuzzi	parent	244	0	#000000	Regina Vins	© 2025 Seventeen Games | Card 244	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Jacuzzi	parent	245	0	#000000	"Penne
+Brassi Actor"	© 2025 Seventeen Games | Card 245	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Jacuzzi	parent	246	0	#000000	"Louis K
+Achydenial"	© 2025 Seventeen Games | Card 246	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Tuba	parent	247	0	#000000	The Glad Benon	© 2025 Seventeen Games | Card 247	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Tuba	parent	248	0	#000000	Quirot Superkitty	© 2025 Seventeen Games | Card 248	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Tuba	parent	252	0	#000000	Will Klapto	© 2025 Seventeen Games | Card 252	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
+Tuba	parent	254	0	#000000	Umar Blop	© 2025 Seventeen Games | Card 254	"You must play this card. If it's the second parent played, the game ends as soon as the current tub resolves.
+Tub bonus increases by 1."	
